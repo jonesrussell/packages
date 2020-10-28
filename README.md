@@ -1,47 +1,144 @@
-# Setup my Linux workstation
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Twitter: jonesrussell42](https://img.shields.io/twitter/follow/jonesrussell42.svg?style=social)](https://twitter.com/jonesrussell42)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jonesrussell/pkg-info">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-> Setup a fresh (or dirty) Linux system with the apps, configs, and environment for my daily use:
->
-> - Ubuntu 18.04 (LTS) 
-> - Mint 19.3 (LTS)
+  <h3 align="center">Package Info</h3>
 
-### [Homepage](https://github.com/jonesrussell/cfg)
+  <p align="center">
+    Get package details
+    <br />
+    <a href="https://github.com/jonesrussell/pkg-info"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jonesrussell/pkg-info">View Demo</a>
+    ·
+    <a href="https://github.com/jonesrussell/pkg-info/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jonesrussell/pkg-info/issues">Request Feature</a>
+  </p>
+</p>
 
-## Install
+<!-- TABLE OF CONTENTS -->
 
-```bash
-wget -q https://raw.githubusercontent.com/jonesrussell/cfg/master/install.sh -O- | sudo bash
+## Table of Contents
+
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+### Built With
+
+- [Typescript](https://www.typescriptlang.org/)
+- [Commander](https://www.npmjs.com/package/commander)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- npm
+
+```sh
+npm install npm@latest -g
 ```
 
-## Author
+### Installation
 
-[Avatar of Russell Jones](https://blog.jonesrussell42.xyz/assets/img/smile.png)
+1. Clone the repo
 
-**Russell Jones**
+```sh
+git clone https://github.com/jonesrussell/pkg-info.git
+```
 
-- Website: https://blog.jonesrussell42.xyz
-- Twitter: [@jonesrussell42](https://twitter.com/jonesrussell42)
-- Github: [@jonesrussell](https://github.com/jonesrussell)
+2. Install NPM packages
+
+```sh
+cd pkg-info
+npm install -g .
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/jonesrussell/pkg-info/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Feel free to check [issues page](https://github.com/jonesrussell/cfg/issues).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
+<!-- LICENSE -->
 
 ## License
 
-Copyright © 2020 [Russell Jones](https://github.com/jonesrussell).
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+<!-- CONTACT -->
 
----
+## Contact
 
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesrussell42@gmail.com
+
+Project Link: [https://github.com/jonesrussell/pkg-info](https://github.com/jonesrussell/pkg-info)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/repo.svg?style=flat-square
+[contributors-url]: https://github.com/jonesrussell/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jonesrussell/repo.svg?style=flat-square
+[forks-url]: https://github.com/jonesrussell/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/jonesrussell/repo.svg?style=flat-square
+[stars-url]: https://github.com/jonesrussell/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jonesrussell/repo.svg?style=flat-square
+[issues-url]: https://github.com/jonesrussell/repo/issues
+[license-shield]: https://img.shields.io/github/license/jonesrussell/repo.svg?style=flat-square
+[license-url]: https://github.com/jonesrussell/repo/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jonesrussell
+[product-screenshot]: images/screenshot.png
