@@ -28,7 +28,7 @@
     "package-management"
   ],
   "bin": {
-    "pkg-info": "./src/packages.ts"
+    "pkg-info": "./dist/packages.js"
   },
   "engines": {
     "node": ">=14.14.0"
