@@ -3,38 +3,55 @@
 import { readFileSync } from "fs";
 import program from "commander";
 import { Validator } from "jsonschema";
+import chalk from "chalk";
 
 const cwd: string = process.cwd();
-const schemaFilename: string = `${cwd}/package.schema.json`;
-const filename: string = `${cwd}/package.json`;
-let fileSchema: string | null = null;
-let file: string | null = null;
+const schemaFilename = `${cwd}/package.schema.json`;
+const filename = `${cwd}/package.json`;
+
+let fileSchema: string;
+let file: string;
 
 /**
- * Try opening package.json
+ * Try opening package.json and schema
  */
 try {
   file = readFileSync(filename, "utf-8");
+} catch (err) {
+  throw new Error(err);
+}
+
+try {
   fileSchema = readFileSync(schemaFilename, "utf-8");
 } catch (err) {
-  console.error(err);
-  process.exit();
+  throw new Error(err);
 }
 
 // Convert the file contents to a JSON object
 const data = JSON.parse(file);
+// Convert the fileSchema contents to a JSON object
+const schema = JSON.parse(fileSchema);
+
+// Set the program version
 program.version(data.version);
 
 const v = new Validator();
-const schema = JSON.parse(fileSchema);
-console.log(v.validate(data, schema));
+const validated = v.validate(data, schema);
+
+if (!validated.valid) {
+  // console.log(chalk.blue("Invalid package.json"));
+  throw new Error("Invalid package.json");
+}
 
 /**
  * Show deps
  */
-console.table(data.dependencies, ["Name", "Version"]);
-console.info("dependencies");
-console.table(data.dependencies);
+const table = console.table;
 
-console.info("devDependencies");
-console.table(data.devDependencies);
+console.group(chalk.blue("Dependencies"));
+table(data.dependencies);
+console.groupEnd();
+
+console.group(chalk.blue("Dev Dependencies"));
+table(data.devDependencies);
+console.groupEnd();
