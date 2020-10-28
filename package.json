@@ -1,5 +1,5 @@
 {
-  "name": "pkg-info",
+  "name": "@jonesrussell/pkg-info",
   "version": "1.0.0",
   "description": "Get info about the current npm package",
   "type": "module",
