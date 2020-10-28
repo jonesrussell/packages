@@ -6,7 +6,10 @@ import { Validator } from "jsonschema";
 import chalk from "chalk";
 
 const cwd: string = process.cwd();
-const schemaFilename = `${cwd}/package.schema.json`;
+// const scriptwd: string = process;
+const execPath = process.execPath;
+console.log(``);
+const schemaFilename = `./package.schema.json`;
 const filename = `${cwd}/package.json`;
 
 let fileSchema: string;

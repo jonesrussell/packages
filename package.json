@@ -20,6 +20,7 @@
     "build": "tsc --build tsconfig.json",
     "start": "npm run build -- -w",
     "lint": "eslint ./src --ext .ts",
+    "global": "npm i -g .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,8 +29,11 @@
     "package-management"
   ],
   "bin": {
-    "pkg-info": "./dist/packages.js"
+    "packages": "./dist/packages.js"
   },
+  "files": [
+    "package.schema.json"
+  ],
   "engines": {
     "node": ">=14.14.0"
   },
