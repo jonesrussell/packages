@@ -126,7 +126,7 @@ Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesru
 [issues-shield]: https://img.shields.io/github/issues/jonesrussell/repo.svg?style=flat-square
 [issues-url]: https://github.com/jonesrussell/repo/issues
 [license-shield]: https://img.shields.io/github/license/jonesrussell/repo.svg?style=flat-square
-[license-url]: https://github.com/jonesrussell/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/jonesrussell/pgk-info/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonesrussell
 [product-screenshot]: images/screenshot.png
