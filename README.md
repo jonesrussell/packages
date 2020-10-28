@@ -73,17 +73,10 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Clone the repo
+1. Install NPM package
 
 ```sh
-git clone https://github.com/jonesrussell/pkg-info.git
-```
-
-2. Install NPM packages
-
-```sh
-cd pkg-info
-npm install -g .
+npm install -g @jonesrussell/pkg-info
 ```
 
 ## Usage
@@ -117,15 +110,15 @@ Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesru
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/repo.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/pkg-info.svg?style=flat-square
 [contributors-url]: https://github.com/jonesrussell/pgk-info/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jonesrussell/repo.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/jonesrussell/pkg-info.svg?style=flat-square
 [forks-url]: https://github.com/jonesrussell/pgk-info/network/members
-[stars-shield]: https://img.shields.io/github/stars/jonesrussell/repo.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/jonesrussell/pkg-info.svg?style=flat-square
 [stars-url]: https://github.com/jonesrussell/pgk-info/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jonesrussell/repo.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/jonesrussell/pkg-info.svg?style=flat-square
 [issues-url]: https://github.com/jonesrussell/pgk-info/issues
-[license-shield]: https://img.shields.io/github/license/jonesrussell/repo.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/jonesrussell/pkg-info.svg?style=flat-square
 [license-url]: https://github.com/jonesrussell/pgk-info/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonesrussell42
