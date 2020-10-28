@@ -118,15 +118,15 @@ Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesru
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/repo.svg?style=flat-square
-[contributors-url]: https://github.com/jonesrussell/repo/graphs/contributors
+[contributors-url]: https://github.com/jonesrussell/pgk-info/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/jonesrussell/repo.svg?style=flat-square
-[forks-url]: https://github.com/jonesrussell/repo/network/members
+[forks-url]: https://github.com/jonesrussell/pgk-info/network/members
 [stars-shield]: https://img.shields.io/github/stars/jonesrussell/repo.svg?style=flat-square
-[stars-url]: https://github.com/jonesrussell/repo/stargazers
+[stars-url]: https://github.com/jonesrussell/pgk-info/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jonesrussell/repo.svg?style=flat-square
-[issues-url]: https://github.com/jonesrussell/repo/issues
+[issues-url]: https://github.com/jonesrussell/pgk-info/issues
 [license-shield]: https://img.shields.io/github/license/jonesrussell/repo.svg?style=flat-square
 [license-url]: https://github.com/jonesrussell/pgk-info/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/jonesrussell
+[linkedin-url]: https://linkedin.com/in/jonesrussell42
 [product-screenshot]: images/screenshot.png
