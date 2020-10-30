@@ -38,13 +38,9 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
-
-<!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
@@ -54,8 +50,6 @@
 
 - [Typescript](https://www.typescriptlang.org/)
 - [Commander](https://www.npmjs.com/package/commander)
-
-<!-- GETTING STARTED -->
 
 ## Getting Started
 
@@ -82,7 +76,7 @@ npm install -g @jonesrussell/pkg-info
 ## Usage
 
 ```sh
-$ pkg-info
+$ packages
 
 
 ```

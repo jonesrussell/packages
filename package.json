@@ -38,7 +38,6 @@
     "node": ">=14.14.0"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "console-table-printer": "^2.4.33",
     "global-modules": "^2.0.0",
