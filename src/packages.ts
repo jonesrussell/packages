@@ -64,7 +64,6 @@ const v = new Validator();
 const validated = v.validate(data, schema);
 
 if (!validated.valid) {
-  // console.log(chalk.blue("Invalid package.json"));
   throw console.error("Invalid package.json");
 }
 
@@ -96,17 +95,3 @@ p2.addRows(devDeps);
 p2.printTable();
 
 process.exit(0);
-
-/**
- * Show devDependencies
- */
-/*const p2 = new Table({
-  title: "devDependencies",
-  columns: [{ name: "Name" }, { name: "Version" }],
-});
-
-const rows2 = forTable(devDeps, "Name", "Version");
-p2.addRows(rows2);
-
-p2.printTable();
-*/
