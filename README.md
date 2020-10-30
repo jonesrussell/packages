@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/jonesrussell/pkg-info">
+  <a href="https://github.com/jonesrussell/packages">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -17,14 +17,14 @@
   <p align="center">
     Get package details
     <br />
-    <a href="https://github.com/jonesrussell/pkg-info"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jonesrussell/packages"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jonesrussell/pkg-info">View Demo</a>
+    <a href="https://github.com/jonesrussell/packages">View Demo</a>
     ·
-    <a href="https://github.com/jonesrussell/pkg-info/issues">Report Bug</a>
+    <a href="https://github.com/jonesrussell/packages/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jonesrussell/pkg-info/issues">Request Feature</a>
+    <a href="https://github.com/jonesrussell/packages/issues">Request Feature</a>
   </p>
 </p>
 
@@ -70,7 +70,7 @@ npm install npm@latest -g
 1. Install NPM package
 
 ```sh
-npm install -g @jonesrussell/pkg-info
+npm install -g @jonesrussell/packages
 ```
 
 ## Usage
@@ -99,20 +99,20 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesrussell42@gmail.com
 
-[https://github.com/jonesrussell/pkg-info](https://github.com/jonesrussell/pkg-info)
+[https://github.com/jonesrussell/packages](https://github.com/jonesrussell/packages)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/pkg-info.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/packages.svg?style=flat-square
 [contributors-url]: https://github.com/jonesrussell/pgk-info/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jonesrussell/pkg-info.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/jonesrussell/packages.svg?style=flat-square
 [forks-url]: https://github.com/jonesrussell/pgk-info/network/members
-[stars-shield]: https://img.shields.io/github/stars/jonesrussell/pkg-info.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/jonesrussell/packages.svg?style=flat-square
 [stars-url]: https://github.com/jonesrussell/pgk-info/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jonesrussell/pkg-info.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/jonesrussell/packages.svg?style=flat-square
 [issues-url]: https://github.com/jonesrussell/pgk-info/issues
-[license-shield]: https://img.shields.io/github/license/jonesrussell/pkg-info.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/jonesrussell/packages.svg?style=flat-square
 [license-url]: https://github.com/jonesrussell/pgk-info/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonesrussell42
