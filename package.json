@@ -19,7 +19,7 @@
     "lint": "eslint ./src --ext .ts",
     "global": "npm i -g .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "keywords": [
     "cli",
