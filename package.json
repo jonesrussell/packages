@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonesrussell/pgk-info.git"
+    "url": "git+https://github.com/jonesrussell/pgk-info.git"
   },
   "bugs": {
     "url": "https://github.com/jonesrussell/cfg/issues"
@@ -29,7 +29,7 @@
     "package-management"
   ],
   "bin": {
-    "packages": "./dist/packages.js"
+    "packages": "dist/packages.js"
   },
   "files": [
     "package.schema.json"
