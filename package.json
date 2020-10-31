@@ -1,6 +1,6 @@
 {
   "name": "@jonesrussell42/packages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get info about the current npm package",
   "type": "module",
   "author": "Russell Jones <jonesrussell42@gmail.com>",
@@ -18,7 +18,8 @@
     "start": "npm run build -- -w",
     "lint": "eslint ./src --ext .ts",
     "global": "npm i -g .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm build"
   },
   "keywords": [
     "cli",
