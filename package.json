@@ -1,5 +1,5 @@
 {
-  "name": "@jonesrussell/packages",
+  "name": "@jonesrussell42/packages",
   "version": "1.0.2",
   "description": "Get info about the current npm package",
   "type": "module",
@@ -13,9 +13,6 @@
     "url": "https://github.com/jonesrussell/cfg/issues"
   },
   "homepage": "https://github.com/jonesrussell/cfg#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "start": "npm run build -- -w",
@@ -28,6 +25,9 @@
     "nodejs",
     "package-management"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "packages": "dist/packages.js"
   },
