@@ -3,7 +3,6 @@
 import { readFileSync } from "fs";
 import program, { on } from "commander";
 import { Validator } from "jsonschema";
-import chalk from "chalk";
 import globalModules from "global-modules";
 import { Table } from "console-table-printer";
 
