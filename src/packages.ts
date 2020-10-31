@@ -6,43 +6,16 @@ import { Validator } from "jsonschema";
 import globalModules from "global-modules";
 import { Table } from "console-table-printer";
 
-/**
- * Convert array into associative array for display in table
- * @param deps array of dependencies from package.json
- */
-function forTable(
-  deps: [string, string][],
-  name = "Name",
-  version = "Version"
-) {
-  return Object.entries(deps).reduce((result, [n, v]) => {
-    return Object.assign(result, { name: n, version: v });
-  }, {});
-  // return new Map(deps.map((x) => [{ name: x[0], version: x[1] }]));
-}
-
-/*process.on("uncaughtException", (err: any) => {
-  console.error("Uncaught Exception:", `${err.message}`);
-  process.exit(1);
-});*/
+// Set the program version
+program.version("1.0.5");
 
 const cwd: string = process.cwd();
 
-const schemaFilename = `${globalModules}/@jonesrussell/pkg-info/package.schema.json`;
-const filename = `${cwd}/package.json`;
-
-let fileSchema: string;
-let file: string;
-
 /**
- * Try opening package.json and schema
+ * Open package.json in current directory
  */
-try {
-  fileSchema = readFileSync(schemaFilename, "utf-8");
-} catch (err) {
-  // throw console.error(err.name, "Cannot open package.schema.json");
-  throw new Error("Cannot open package.schema.json");
-}
+const filename = `${cwd}/package.json`;
+let file: string;
 
 try {
   file = readFileSync(filename, "utf-8");
@@ -52,11 +25,21 @@ try {
 
 // Convert the file contents to a JSON object
 const data = JSON.parse(file);
+
+/**
+ * Try opening package.json and schema
+ */
+let fileSchema: string;
+const schemaFilename = `${globalModules}/@jonesrussell42/packages/package.schema.json`;
+
+try {
+  fileSchema = readFileSync(schemaFilename, "utf-8");
+} catch (err) {
+  throw console.error(`Cannot open ${schemaFilename}`);
+}
+
 // Convert the fileSchema contents to a JSON object
 const schema = JSON.parse(fileSchema);
-
-// Set the program version
-program.version(data.version);
 
 // Validate package.json against schema
 const v = new Validator();
