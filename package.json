@@ -7,19 +7,22 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonesrussell/pgk-info.git"
+    "url": "git+https://github.com/jonesrussell/packages.git"
   },
   "bugs": {
-    "url": "https://github.com/jonesrussell/cfg/issues"
+    "url": "https://github.com/jonesrussell/packages/issues"
   },
-  "homepage": "https://github.com/jonesrussell/cfg#readme",
+  "homepage": "https://github.com/jonesrussell/packages#readme",
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "start": "npm run build -- -w",
     "lint": "eslint ./src --ext .ts",
     "global": "npm i -g .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "view:coverage": "serve coverage/lcov-report",
+    "clean": "rm -rf coverage src/*.ts src/*.map"
   },
   "keywords": [
     "cli",
