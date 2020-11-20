@@ -22,7 +22,7 @@
 
 ## Table of Contents
 
-- [About the Project](#about-the-project)
+- [What Is This?](#what-is-this)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
