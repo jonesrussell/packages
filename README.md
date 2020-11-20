@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
@@ -125,15 +125,15 @@ Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesru
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/packages.svg?style=flat-square
-[contributors-url]: https://github.com/jonesrussell/pgk-info/graphs/contributors
+[contributors-url]: https://github.com/jonesrussell/packages/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/jonesrussell/packages.svg?style=flat-square
-[forks-url]: https://github.com/jonesrussell/pgk-info/network/members
+[forks-url]: https://github.com/jonesrussell/packages/network/members
 [stars-shield]: https://img.shields.io/github/stars/jonesrussell/packages.svg?style=flat-square
-[stars-url]: https://github.com/jonesrussell/pgk-info/stargazers
+[stars-url]: https://github.com/jonesrussell/packages/stargazers
 [issues-shield]: https://img.shields.io/github/issues/jonesrussell/packages.svg?style=flat-square
-[issues-url]: https://github.com/jonesrussell/pgk-info/issues
+[issues-url]: https://github.com/jonesrussell/packages/issues
 [license-shield]: https://img.shields.io/github/license/jonesrussell/packages.svg?style=flat-square
-[license-url]: https://github.com/jonesrussell/pgk-info/blob/main/LICENSE.txt
+[license-url]: https://github.com/jonesrussell/packages/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonesrussell42
 [product-screenshot]: images/screenshot.png
