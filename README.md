@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jonesrussell/packages">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://blog.jonesrussell42.xyz/assets/img/smile.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Package Info</h3>

@@ -6,8 +6,21 @@ import { Validator } from "jsonschema";
 import globalModules from "global-modules";
 import { Table } from "console-table-printer";
 
+type Dependant = {
+  name: string;
+  version: string;
+};
+
 // Set the program version
-program.version("1.0.5");
+program.version("1.0.6");
+
+const loadFile = (filename: string) => {
+  try {
+    return readFileSync(filename, "utf-8");
+  } catch (err) {
+    throw console.error(`Cannot open ${filename}`);
+  }
+};
 
 const cwd: string = process.cwd();
 
@@ -15,28 +28,12 @@ const cwd: string = process.cwd();
  * Open package.json in current directory
  */
 const filename = `${cwd}/package.json`;
-let file: string;
-
-try {
-  file = readFileSync(filename, "utf-8");
-} catch (err) {
-  throw console.error(err.name, "Cannot open package.json");
-}
-
 // Convert the file contents to a JSON object
-const data = JSON.parse(file);
+const data = JSON.parse(loadFile(filename));
 
-/**
- * Try opening package.json and schema
- */
-let fileSchema: string;
 const schemaFilename = `${globalModules}/@jonesrussell42/packages/package.schema.json`;
-
-try {
-  fileSchema = readFileSync(schemaFilename, "utf-8");
-} catch (err) {
-  throw console.error(`Cannot open ${schemaFilename}`);
-}
+console.log(schemaFilename);
+const fileSchema = loadFile(schemaFilename);
 
 // Convert the fileSchema contents to a JSON object
 const schema = JSON.parse(fileSchema);
@@ -62,18 +59,17 @@ for (let [name, version] of Object.entries(data.devDependencies)) {
   devDeps.push({ Name: name, Version: version });
 }
 
-const p = new Table({
-  title: "dependencies",
-  columns: [{ name: "Name" }, { name: "Version" }],
-});
-p.addRows(deps);
-p.printTable();
+function depsTable(deps: any) {
+  const p = new Table({
+    title: "dependencies",
+    columns: [{ name: "Name" }, { name: "Version" }],
+  });
+  p.addRows(deps);
 
-const p2 = new Table({
-  title: "devDependencies",
-  columns: [{ name: "Name" }, { name: "Version" }],
-});
-p2.addRows(devDeps);
-p2.printTable();
+  return p.render();
+}
+
+console.log(`${depsTable(deps)}`);
+console.log(`${depsTable(devDeps)}`);
 
 process.exit(0);
