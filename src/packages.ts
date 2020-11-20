@@ -12,7 +12,7 @@ type Dependant = {
 };
 
 // Set the program version
-program.version("1.0.6");
+program.version("1.0.7");
 
 const loadFile = (filename: string) => {
   try {

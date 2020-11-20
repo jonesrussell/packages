@@ -1,6 +1,6 @@
 {
   "name": "@jonesrussell42/packages",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Get info about the current npm package",
   "type": "module",
   "author": "Russell Jones <jonesrussell42@gmail.com>",
@@ -48,6 +48,7 @@
     "jsonschema": "^1.4.0"
   },
   "devDependencies": {
+    "@types/commander": "^2.12.2",
     "@types/global-modules": "^2.0.0",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.6",
