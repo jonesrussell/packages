@@ -72,6 +72,41 @@ npm install -g @jonesrussell/packages
 
 ```sh
 $ packages
+
+           dependencies            
+┌───────────────────────┬─────────┐
+│                  Name │ Version │
+├───────────────────────┼─────────┤
+│             commander │  ^6.2.0 │
+│ console-table-printer │ ^2.4.33 │
+│        global-modules │  ^2.0.0 │
+│            jsonschema │  ^1.4.0 │
+└───────────────────────┴─────────┘
+                 dependencies                  
+┌──────────────────────────────────┬──────────┐
+│                             Name │  Version │
+├──────────────────────────────────┼──────────┤
+│                 @types/commander │  ^2.12.2 │
+│            @types/global-modules │   ^2.0.0 │
+│                      @types/jest │ ^26.0.15 │
+│                      @types/node │ ^14.14.6 │
+│        @types/source-map-support │   ^0.5.3 │
+│ @typescript-eslint/eslint-plugin │   ^4.6.0 │
+│        @typescript-eslint/parser │   ^4.6.0 │
+│                           eslint │  ^7.12.1 │
+│           eslint-config-prettier │  ^6.15.0 │
+│    eslint-plugin-eslint-comments │   ^3.2.0 │
+│             eslint-plugin-import │  ^2.22.1 │
+│               eslint-plugin-jest │  ^24.1.0 │
+│               eslint-plugin-node │  ^11.1.0 │
+│                             jest │  ^26.6.1 │
+│                         onchange │   ^7.1.0 │
+│                            serve │  ^11.3.2 │
+│               source-map-support │  ^0.5.19 │
+│                          ts-jest │  ^26.4.3 │
+│                       typescript │   ^4.0.5 │
+└──────────────────────────────────┴──────────┘
+
 ```
 
 ## Contributing
