@@ -32,7 +32,6 @@ const filename = `${cwd}/package.json`;
 const data = JSON.parse(loadFile(filename));
 
 const schemaFilename = `${globalModules}/@jonesrussell42/packages/package.schema.json`;
-console.log(schemaFilename);
 const fileSchema = loadFile(schemaFilename);
 
 // Convert the fileSchema contents to a JSON object
