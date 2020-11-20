@@ -5,7 +5,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/jonesrussell/packages">
@@ -28,8 +27,6 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
 - [About the Project](#about-the-project)
@@ -44,7 +41,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+A simple utility to print a projects dependencies in the package.json file.
 
 ### Built With
 
@@ -56,8 +53,6 @@
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 
 - npm
 
@@ -77,8 +72,6 @@ npm install -g @jonesrussell/packages
 
 ```sh
 $ packages
-
-
 ```
 
 ## Contributing
@@ -101,7 +94,6 @@ Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesru
 
 [https://github.com/jonesrussell/packages](https://github.com/jonesrussell/packages)
 
-<!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/packages.svg?style=flat-square
