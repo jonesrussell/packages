@@ -11,16 +11,9 @@
     <img src="https://blog.jonesrussell42.xyz/assets/img/smile.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Package Info</h3>
+  <h3 align="center">packages</h3>
 
   <p align="center">
-    Get package details
-    <br />
-    <a href="https://github.com/jonesrussell/packages"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/jonesrussell/packages">View Demo</a>
-    ·
     <a href="https://github.com/jonesrussell/packages/issues">Report Bug</a>
     ·
     <a href="https://github.com/jonesrussell/packages/issues">Request Feature</a>
@@ -39,7 +32,7 @@
 - [License](#license)
 - [Contact](#contact)
 
-## About The Project
+## What is this?
 
 A simple utility to print a projects dependencies in the package.json file.
 
