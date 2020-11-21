@@ -58,9 +58,9 @@ for (let [name, version] of Object.entries(data.devDependencies)) {
   devDeps.push({ Name: name, Version: version });
 }
 
-function depsTable(deps: any) {
+function depsTable(title: string, deps: any) {
   const p = new Table({
-    title: "dependencies",
+    title,
     columns: [{ name: "Name" }, { name: "Version" }],
   });
   p.addRows(deps);
@@ -68,7 +68,7 @@ function depsTable(deps: any) {
   return p.render();
 }
 
-console.log(`${depsTable(deps)}`);
-console.log(`${depsTable(devDeps)}`);
+console.log(`${depsTable('dependencies', deps)}`);
+console.log(`${depsTable('devDependencies', devDeps)}`);
 
 process.exit(0);
