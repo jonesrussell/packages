@@ -10,21 +10,30 @@ ARG INSTALL_ZSH="true"
 ARG UPGRADE_PACKAGES="true"
 
 # Install needed packages, yarn, nvm and setup non-root user. Use a separate RUN statement to add your own dependencies.
+ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-ENV NVM_DIR=/usr/local/share/nvm
-ENV NVM_SYMLINK_CURRENT=true \ 
-  PATH=${NVM_DIR}/current/bin:${PATH}
+ARG UPGRADE_PACKAGES="true"
+ARG INSTALL_OH_MYS="true"
+ARG NVM_DIR=/usr/local/share/nvm
+ARG ENABLE_NONROOT_DOCKER="true"
+ARG SOURCE_SOCKET=/var/run/docker-host.sock
+ARG TARGET_SOCKET=/var/run/docker.sock
+ARG NODE_VERSION=v10.20.1
+ARG UPDATE_RC="true"
+
 COPY library-scripts/*.sh /tmp/library-scripts/
+
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   # Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131
   && apt-get purge -y imagemagick imagemagick-6-common \
   # Install common packages, non-root user, update yarn and install nvm
-  && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
+  && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" "${INSTALL_OH_MYS}" \
   # Install yarn, nvm
   && rm -rf /opt/yarn-* /usr/local/bin/yarn /usr/local/bin/yarnpkg \
-  && bash /tmp/library-scripts/node-debian.sh "${NVM_DIR}" "none" "${USERNAME}" \
+  && bash /tmp/library-scripts/node-debian.sh "${NVM_DIR}" "${NODE_VERSION}" "${USERNAME}" "${UPDATE_RC}" \
+  && bash /tmp/library-scripts/docker-debian.sh "${ENABLE_NONROOT_DOCKER}" "${SOURCE_SOCKET}" "${TARGET_SOCKET}" "${USERNAME}" \
   # Clean up
   && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /root/.gnupg /tmp/library-scripts
 
@@ -49,3 +58,12 @@ RUN sudo -u ${USERNAME} npm install -g eslint tslint typescript \
 ARG EXTRA_NODE_VERSION=v14.14.0
 RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
+RUN su node -c "mkdir -p /home/$USERNAME/.vscode-server/extensions \
+  /home/$USERNAME/.vscode-server-insiders/extensions \
+  && chown -R $USERNAME \
+  /home/$USERNAME/.vscode-server \
+  /home/$USERNAME/.vscode-server-insiders"
+
+ENTRYPOINT ["/usr/local/share/docker-init.sh"]
+
+CMD ["sleep", "infinity"]

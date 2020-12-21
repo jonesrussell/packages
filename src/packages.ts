@@ -12,7 +12,7 @@ type Dependant = {
 };
 
 // Set the program version
-program.version("1.0.7");
+program.version("1.0.8");
 
 const loadFile = (filename: string) => {
   try {
@@ -49,12 +49,12 @@ if (!validated.valid) {
  * Show deps
  */
 let deps = [];
-for (let [name, version] of Object.entries(data.dependencies)) {
+for (let [name, version] of Object.entries(data?.dependencies)) {
   deps.push({ Name: name, Version: version });
 }
 
 let devDeps = [];
-for (let [name, version] of Object.entries(data.devDependencies)) {
+for (let [name, version] of Object.entries(data?.devDependencies)) {
   devDeps.push({ Name: name, Version: version });
 }
 

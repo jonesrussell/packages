@@ -25,13 +25,18 @@
 		"rbuckton.tsserver-live-reload",
 		"formulahendry.code-runner"
 	],
+	"runArgs": [
+		"--init"
+	],
 	"mounts": [
-		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
+		"source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
+		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install -g pnpm && pnpm install",
+	"postCreateCommand": "npm install -g npm && npm install",
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"
 }
