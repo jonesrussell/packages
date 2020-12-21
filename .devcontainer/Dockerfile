@@ -14,13 +14,13 @@ ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-ARG UPGRADE_PACKAGES="true"
+ARG UPGRADE_PACKAGES="false"
 ARG INSTALL_OH_MYS="true"
 ARG NVM_DIR=/usr/local/share/nvm
 ARG ENABLE_NONROOT_DOCKER="true"
 ARG SOURCE_SOCKET=/var/run/docker-host.sock
 ARG TARGET_SOCKET=/var/run/docker.sock
-ARG NODE_VERSION=v10.20.1
+ARG NODE_VERSION=v14.14.1
 ARG UPDATE_RC="true"
 
 COPY library-scripts/*.sh /tmp/library-scripts/
